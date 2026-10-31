@@ -10,10 +10,17 @@
 </style>
 </head>
 <body>
-<header><span>♡ &nbsp; A little birthday magic</span><button class="sound" id="sound" aria-pressed="false">♫ Sound off</button></header>
+<header><span>♡ &nbsp; A little birthday magic</span><button class="sound" id="sound" aria-pressed="false" hidden>♫ Sound off</button><a class="sound" href="#music" style="text-decoration:none">♫ A song for you</a></header>
 <main>
 <section class="scene" id="opening"><p class="eyebrow">Special delivery for Clare</p><h1>A little surprise.<br>A <em>whole lot</em> of love.</h1><p class="intro">We may be a little farther apart today,<br>but this one's straight from my heart to yours.</p><div class="gift-area"><span class="star s1" aria-hidden="true">✧</span><span class="star s2" aria-hidden="true">✦</span><span class="star s3" aria-hidden="true">♡</span><button class="gift-button" id="gift" aria-label="Open your birthday present"><span class="box"><span class="ribbon"></span></span><span class="lid"></span><span class="bow"></span></button></div><button class="primary" id="open">Open your birthday surprise &nbsp; ♡</button><p class="hint">Made just for you, by your bestie.</p></section>
 <section class="scene" id="celebration" hidden><span class="sprig" aria-hidden="true">❦</span><span class="sprig right" aria-hidden="true">❦</span><p class="eyebrow">The world is sweeter with you in it</p><h1>Happy Birthday,<br><em>Clare!</em></h1><div class="letter"><div class="tiny-heart" aria-hidden="true">♡</div><p>Happy Birthday Clare!!!!</p><p>It's the first one where we can't come see you, but I wanted to send you something special anyways!!!</p><p>I hope today has been as amazing as you are!!!!</p><div class="signature">Your Bestie,<br>Kayla</div></div><div class="cake" id="cake" aria-hidden="true"><div class="cake-base"></div><div class="icing"></div><div class="candle"><div class="flame"></div></div></div><div id="wish-controls"><p class="intro">One last thing… close your eyes and make a wish.</p><button class="primary" id="wish">Blow out your candle &nbsp; ✧</button></div><div id="wish-done" hidden aria-live="polite"><p class="wish-result">Here's to you, and all your wishes coming true. ♡</p><button class="secondary" id="again">A little more confetti?</button></div></section>
+<section id="music" aria-labelledby="music-title" style="max-width:610px;margin:35px auto 0;padding:25px 16px;border-top:1px solid #dfc5cb;scroll-margin-top:20px">
+<p class="eyebrow" id="music-title">A song for you ♡</p>
+<p style="font-family:Georgia,serif;font-style:italic;font-size:23px">Even with the space between us.</p>
+<iframe title="Space Between by Dove Cameron and Sofia Carson on Apple Music" src="https://embed.music.apple.com/us/song/space-between/1440798402" height="175" style="width:100%;border:0;border-radius:12px;background:transparent" allow="autoplay *; encrypted-media *; fullscreen *" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"></iframe>
+<p class="hint">Tap play for a little music. Apple Music may play a preview.</p>
+<a href="https://music.apple.com/us/song/space-between/1440798402" target="_blank" rel="noopener noreferrer" style="color:var(--rose);font-size:13px">Listen on Apple Music ↗</a>
+</section>
 </main><footer class="footer">Sent with love, <b>from Kayla to Clare</b> &nbsp; ♡</footer>
 <script>
 const $=id=>document.getElementById(id);let opened=false,sound=false,audio,timer;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
